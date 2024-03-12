@@ -1,0 +1,117 @@
+.filters-group-container {
+  margin-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .filters-group-container {
+    width: 30%;
+    max-width: 300px;
+    min-width: 240px;
+    margin-top: 48px;
+    flex-shrink: 0;
+  }
+}
+.search-input-container {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid #7e858e;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.search-input {
+  background-color: transparent;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  padding-left: 16px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 16px;
+}
+.search-button-container {
+  background-color: #475569;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin: 0px;
+}
+
+.search-icon {
+  color: #ffffff;
+  width: 15px;
+  height: 15px;
+}
+@media screen and (min-width: 768px) {
+  .search-input-container {
+    display: none;
+  }
+}
+.horizontal-line {
+  background-color: #475569;
+}
+.employment-type-container {
+  display: flex;
+  flex-direction: column;
+}
+.employment-type-heading {
+  color: #ffffff;
+  font-weight: 400;
+  font-family: 'Roboto';
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+.employee-type-list-container {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+.employee-item {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  padding-bottom: 20px;
+}
+
+.check-label {
+  color: #ffffff;
+  margin-left: 10px;
+  font-size: 14px;
+}
+.salary-range-container {
+  display: flex;
+  flex-direction: column;
+}
+.salary-range-heading {
+  color: #ffffff;
+  font-weight: 400;
+  font-family: 'Roboto';
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+.salary-range-list-container {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+.salary-item {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  padding-bottom: 20px;
+}
+
+.check-label {
+  color: #ffffff;
+  margin-left: 10px;
+  font-size: 14px;
+}
