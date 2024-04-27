@@ -1,4 +1,5 @@
 import {Component} from 'react'
+
 import Loader from 'react-loader-spinner'
 import Cookies from 'js-cookie'
 import {BsFillBriefcaseFill, BsStarFill} from 'react-icons/bs'
@@ -6,7 +7,6 @@ import {BiLinkExternal} from 'react-icons/bi'
 import {MdLocationOn} from 'react-icons/md'
 
 import Header from '../Header'
-// eslint-disable-next-line import/extensions
 import SimilarJobItem from '../SimilarJobItem'
 import SkillsCard from '../SkillsCard'
 import './index.css'
@@ -77,13 +77,14 @@ class JobItemDetails extends Component {
     const response = await fetch(url, options)
     if (response.ok === true) {
       const data = await response.json()
-      console.log(data)
+      // console.log(data)
       const updatedData = this.getFormattedData(data.job_details)
+      // console.log(updatedData)
       const updatedSimilarJobsData = data.similar_jobs.map(eachSimilarJob =>
         this.getFormattedSimilarData(eachSimilarJob),
       )
-      console.log(updatedData)
-      console.log(updatedSimilarJobsData)
+      // console.log(updatedData)
+      // console.log(updatedSimilarJobsData)
       this.setState({
         jobData: updatedData,
         similarJobsData: updatedSimilarJobsData,
@@ -115,7 +116,7 @@ class JobItemDetails extends Component {
 
         <button
           type="button"
-          id="button"
+          data-testid="button"
           className="job-item-failure-button"
           onClick={this.getJobData}
         >

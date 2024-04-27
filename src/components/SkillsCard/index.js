@@ -1,6 +1,9 @@
+import './index.css'
+
 const SkillsCard = props => {
   const {skillDetails} = props
   const {imageUrl, name} = skillDetails
+  // console.log(imageUrl)
   return (
     <li className="skills-item-container">
       <div className="skills-container">

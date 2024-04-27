@@ -13,6 +13,7 @@
   .similar-job-item {
     width: 350px;
     margin-right: 20px;
+    margin: auto;
   }
 }
 .logo-title-location-container {
